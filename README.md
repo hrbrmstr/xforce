@@ -24,6 +24,7 @@ The following functions are implemented:
   - `xforce_ip_history`: Get IP History
   - `xforce_ip_malware`: Get Malware Associated with the IP
   - `xforce_ip_report`: Get IP Report
+  - `xforce_malware_for_hash`: Get Malware for File Hash
   - `xforce_resolve`: Get DNS Records
   - `xforce_url_malware`: Get Malware for URL
   - `xforce_url_report`: Get URL Report
