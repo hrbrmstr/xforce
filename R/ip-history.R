@@ -6,7 +6,7 @@
 #'        API functions will look for these in the `XFORCE_API_KEY` and
 #'        `XFORCE_API_PASSWORD` environment variables. You can store these
 #'        in `~/.Renviron` and you can obtain them
-#'        [on the IBM X-Force Portal](api_key=Sys.getenv("XFORCE_API_KEY")).
+#'        [on the IBM X-Force Portal](https://exchange.xforce.ibmcloud.com/settings/api).
 #' @export
 #' @examples \donrun{
 #' xforce_ip_history("174.62.167.97")

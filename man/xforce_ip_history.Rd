@@ -14,7 +14,7 @@ xforce_ip_history(ip, api_key = Sys.getenv("XFORCE_API_KEY"),
 API functions will look for these in the \code{XFORCE_API_KEY} and
 \code{XFORCE_API_PASSWORD} environment variables. You can store these
 in \code{~/.Renviron} and you can obtain them
-\href{api_key=Sys.getenv("XFORCE_API_KEY")}{on the IBM X-Force Portal}.}
+\href{https://exchange.xforce.ibmcloud.com/settings/api}{on the IBM X-Force Portal}.}
 }
 \description{
 Get IP History/Reputation
