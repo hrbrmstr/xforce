@@ -9,9 +9,9 @@
 #'
 #' @md
 #' @name xforce
-#' @note All `xforce` API functions will look for these in the `XFORCE_API_KEY` and
-#'       `XFORCE_API_PASSWORD` environment variables. You can store these
-#'       in `~/.Renviron` and you can obtain them
+#' @note All `xforce` API functions require an API key and password and will look
+#'       for these in the `XFORCE_API_KEY` and `XFORCE_API_PASSWORD` environment
+#'       variables. You can store these in `~/.Renviron` and you can obtain them
 #'       [on the IBM X-Force Portal](https://exchange.xforce.ibmcloud.com/settings/api).
 #' @docType package
 #' @author Bob Rudis (bob@@rud.is)

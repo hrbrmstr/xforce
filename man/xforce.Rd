@@ -17,9 +17,9 @@ addresses. Tools are provided to query and manage this data.
 }
 }
 \note{
-All \code{xforce} API functions will look for these in the \code{XFORCE_API_KEY} and
-\code{XFORCE_API_PASSWORD} environment variables. You can store these
-in \code{~/.Renviron} and you can obtain them
+All \code{xforce} API functions require an API key and password and will look
+for these in the \code{XFORCE_API_KEY} and \code{XFORCE_API_PASSWORD} environment
+variables. You can store these in \code{~/.Renviron} and you can obtain them
 \href{https://exchange.xforce.ibmcloud.com/settings/api}{on the IBM X-Force Portal}.
 }
 \author{

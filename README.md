@@ -10,6 +10,8 @@ The ‘IBM’ ‘X-Force’ portal has a corresponding ‘API’
 access to threat intelligence for domains, hosts and ‘IP’ addresses.
 Tools are provided to query and manage this data.
 
+## NOTE
+
 All `xforce` API functions will look for these in the `XFORCE_API_KEY`
 and `XFORCE_API_PASSWORD` environment variables. You can store these in
 `~/.Renviron` and you can obtain them [on the IBM X-Force

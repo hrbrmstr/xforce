@@ -2,7 +2,7 @@
 % Please edit documentation in R/ip-history.R
 \name{xforce_ip_history}
 \alias{xforce_ip_history}
-\title{Get IP History}
+\title{Get IP History/Reputation}
 \usage{
 xforce_ip_history(ip, api_key = Sys.getenv("XFORCE_API_KEY"),
   api_password = Sys.getenv("XFORCE_API_PASSWORD"))
@@ -17,7 +17,7 @@ in \code{~/.Renviron} and you can obtain them
 \href{api_key=Sys.getenv("XFORCE_API_KEY")}{on the IBM X-Force Portal}.}
 }
 \description{
-Get IP History
+Get IP History/Reputation
 }
 \examples{
 \\donrun{
