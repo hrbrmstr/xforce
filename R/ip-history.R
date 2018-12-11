@@ -1,4 +1,4 @@
-#' Get IP Report
+#' Get IP History
 #'
 #' @md
 #' @param ip IP address
@@ -6,16 +6,16 @@
 #'        API functions will look for these in the `XFORCE_API_KEY` and
 #'        `XFORCE_API_PASSWORD` environment variables. You can store these
 #'        in `~/.Renviron` and you can obtain them
-#'        [on the IBM X-Force Portal](https://exchange.xforce.ibmcloud.com/settings/api).
+#'        [on the IBM X-Force Portal](api_key=Sys.getenv("XFORCE_API_KEY")).
 #' @export
 #' @examples \donrun{
-#' xforce_ip_report("174.62.167.97")
+#' xforce_ip_history("174.62.167.97")
 #' }
-xforce_ip_report <- function(ip, api_key=Sys.getenv("XFORCE_API_KEY"),
-                             api_password=Sys.getenv("XFORCE_API_PASSWORD")) {
+xforce_ip_history <- function(ip, api_key=Sys.getenv("XFORCE_API_KEY"),
+                              api_password=Sys.getenv("XFORCE_API_PASSWORD")) {
 
   httr::GET(
-    url = sprintf("https://api.xforce.ibmcloud.com/ipr/%s", ip),
+    url = sprintf("https://api.xforce.ibmcloud.com/ipr/history/%s", ip),
     httr::accept_json(),
     httr::user_agent("R xforce package (https://github.com/hrbrmstr/xforce"),
     httr::authenticate(

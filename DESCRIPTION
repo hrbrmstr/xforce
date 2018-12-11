@@ -1,6 +1,6 @@
 Package: xforce
 Type: Package
-Title: xforce title goes here otherwise CRAN checks fail
+Title: Tools to Gather Threat Intelligence from 'IBM' 'X-Force'
 Version: 0.1.0
 Date: 2018-12-11
 Authors@R: c(
@@ -8,7 +8,9 @@ Authors@R: c(
            comment = c(ORCID = "0000-0001-5670-2640"))
   )
 Maintainer: Bob Rudis <bob@rud.is>
-Description: A good description goes here otherwise CRAN checks fail.
+Description: The 'IBM' 'X-Force' portal has a corresponding 'API' (<https://api.xforce.ibmcloud.com/doc/#introduction>)
+    that provides access to threat intelligence for domains, hosts and 'IP' 
+    addresses. Tools are provided to query and manage this data.
 URL: https://gitlab.com/hrbrmstr/xforce
 BugReports: https://gitlab.com/hrbrmstr/xforce/issues
 Encoding: UTF-8
@@ -21,3 +23,4 @@ Depends:
 Imports:
     httr,
     jsonlite
+RoxygenNote: 6.1.1

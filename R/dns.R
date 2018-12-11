@@ -1,7 +1,7 @@
-#' Get IP Report
+#' Get DNS Records
 #'
 #' @md
-#' @param ip IP address
+#' @param query IP address, domain name, or URL
 #' @param api_key,api_password IBM X-Force API Key & Password. All `xforce`
 #'        API functions will look for these in the `XFORCE_API_KEY` and
 #'        `XFORCE_API_PASSWORD` environment variables. You can store these
@@ -9,13 +9,13 @@
 #'        [on the IBM X-Force Portal](https://exchange.xforce.ibmcloud.com/settings/api).
 #' @export
 #' @examples \donrun{
-#' xforce_ip_report("174.62.167.97")
+#' xforce_resolve("174.62.167.97")
 #' }
-xforce_ip_report <- function(ip, api_key=Sys.getenv("XFORCE_API_KEY"),
-                             api_password=Sys.getenv("XFORCE_API_PASSWORD")) {
+xforce_resolve <- function(query, api_key=Sys.getenv("XFORCE_API_KEY"),
+                           api_password=Sys.getenv("XFORCE_API_PASSWORD")) {
 
   httr::GET(
-    url = sprintf("https://api.xforce.ibmcloud.com/ipr/%s", ip),
+    url = sprintf("https://api.xforce.ibmcloud.com/resolve/%s", query),
     httr::accept_json(),
     httr::user_agent("R xforce package (https://github.com/hrbrmstr/xforce"),
     httr::authenticate(
